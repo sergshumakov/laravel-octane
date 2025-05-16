@@ -9,6 +9,7 @@ RUN apt-get update \
         git \
         unzip \
         zip \
+        wget \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
